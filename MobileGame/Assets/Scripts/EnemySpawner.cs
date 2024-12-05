@@ -13,18 +13,27 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float difficultyScalingFactor = 0.75f;
 
     private int currentWave = 1;
-    private float timeScineLastSpwan;
+    private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
 
+    private void Start()
+    {
+        StartWave();
+    }
+
     private void Update()
     {
+        if (!isSpawning) return;
+
+        timeSinceLastSpawn += Time.deltaTime;
         
-    }
-    private int EnemiesPerWave()
-    {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
+        if (timeSinceLastSpawn >= (1f / enemiesPerSecond))
+        {
+            Debug.Log("spawn Enemy");
+            timeSinceLastSpawn = 0f;
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,4 +42,9 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = true;
         enemiesLeftToSpawn = baseEnemies;
     }
+    private int EnemiesPerWave()
+    {
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
+    }
+
 }
