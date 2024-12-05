@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour
 {
     [SerializeField]
-    string levelToLoad = "LevelOne";
+    string levelToLoad = "Map&DifficultySelect";
     // Start is called before the first frame update
     void Start()
     {
