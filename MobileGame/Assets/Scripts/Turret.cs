@@ -51,7 +51,7 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-        Debug.Log("Shoot");
+        
     }
 
     private void FindTarget()
