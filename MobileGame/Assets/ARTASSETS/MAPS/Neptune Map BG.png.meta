@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Neptune Map BG_0: -8503426814146589474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
