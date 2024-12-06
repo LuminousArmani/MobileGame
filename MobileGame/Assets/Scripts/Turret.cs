@@ -12,9 +12,10 @@ public class Turret : MonoBehaviour
     [Header("Attributr")]
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
-    [SerializeField] private float
+    [SerializeField] private float bps = 1f; //bullet per second
 
     private Transform target;
+    private float timeUntilFire;
 
     private void Update()
     {
@@ -30,11 +31,27 @@ public class Turret : MonoBehaviour
         {
             target = null;
         }
+        else
+        {
+            timeUntilFire += Time.deltaTime;
+
+            if (timeUntilFire >= 1f / bps)
+            {
+                Shoot();
+                timeUntilFire = 0f;
+            }
+
+        }
     }
 
     private bool CheckTargetIsInRange()
     {
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
+    }
+
+    private void Shoot()
+    {
+        Debug.Log("Shoot");
     }
 
     private void FindTarget()
