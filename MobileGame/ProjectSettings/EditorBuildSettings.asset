@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EarthEasy.unity
     guid: d0ed51df5dea1e74c883eab31c770083
+  - enabled: 1
+    path: Assets/Scenes/MarsMedium.unity
+    guid: 34f1cc070e5c2e34db15359245533f20
+  - enabled: 1
+    path: Assets/Scenes/NeptuneHard.unity
+    guid: b2f68bceac09cd242a9baec94f0bac78
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

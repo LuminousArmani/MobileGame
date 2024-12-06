@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 247931113}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2136681650}
+        m_TargetAssemblyTypeName: MapSelector, Assembly-CSharp
+        m_MethodName: Earth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &247931113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 326517108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2136681650}
+        m_TargetAssemblyTypeName: MapSelector, Assembly-CSharp
+        m_MethodName: Neptune
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &326517108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,7 +1190,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1425901999}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2136681650}
+        m_TargetAssemblyTypeName: MapSelector, Assembly-CSharp
+        m_MethodName: Mars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1425901999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,6 +1751,7 @@ GameObject:
   - component: {fileID: 2136681646}
   - component: {fileID: 2136681645}
   - component: {fileID: 2136681649}
+  - component: {fileID: 2136681650}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1822,6 +1859,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: TitleScreen
+--- !u!114 &2136681650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136681644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3882f6ebb6f354941905e5bf7bea8aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: EarthEasy
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
