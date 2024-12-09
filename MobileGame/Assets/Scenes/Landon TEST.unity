@@ -9780,6 +9780,7 @@ GameObject:
   - component: {fileID: 1646741996}
   - component: {fileID: 1646741995}
   - component: {fileID: 1646741997}
+  - component: {fileID: 1646741998}
   m_Layer: 0
   m_Name: level manager
   m_TagString: Untagged
@@ -9850,6 +9851,20 @@ MonoBehaviour:
   enemiesPerSecond: 2
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
+--- !u!114 &1646741998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646741994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adafa7d6a25fce040a68640356d8b48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerPrefabs:
+  - {fileID: 5756320176518916324, guid: 3d3aea2dd2bf682499bce40369293983, type: 3}
 --- !u!4 &1658832378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710971891264735058, guid: bfb23284bc4ac46469b00275b20dd378, type: 3}
@@ -12331,10 +12346,6 @@ PrefabInstance:
     - target: {fileID: 4216771232439474990, guid: bfb23284bc4ac46469b00275b20dd378, type: 3}
       propertyPath: m_Name
       value: plot (42)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4216771232439474990, guid: bfb23284bc4ac46469b00275b20dd378, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4710971891264735058, guid: bfb23284bc4ac46469b00275b20dd378, type: 3}
       propertyPath: m_LocalPosition.x
