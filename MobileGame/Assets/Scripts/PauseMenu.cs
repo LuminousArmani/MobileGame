@@ -53,6 +53,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void PauseGame()
     {
+        GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0;
     }
 
