@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NeptuneHard.unity
     guid: b2f68bceac09cd242a9baec94f0bac78
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 4aca533be8b294a4f89e66b2ed96b95f
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 61addd8ecf078d244846368a17eefd67
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
