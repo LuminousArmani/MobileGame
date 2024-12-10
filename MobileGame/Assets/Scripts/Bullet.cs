@@ -8,20 +8,28 @@ public class Bullet : MonoBehaviour
     [Header("Attriutes")]
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private int bulletDamage = 1;
+    
 
     private Transform target;
+    private Vector2 initialDirection;
 
     public void SetTarget(Transform _target)
     {
         target = _target;
+
+        if (target != null)
+        {
+            initialDirection = (target.position - transform.position).normalized; // Store normalized direction
+        }
     }
 
     private void FixedUpdate()
     {
-        if (!target) return;
-       Vector2 direction = (target.position - transform.position).normalized;
 
-        rb.linearVelocity = direction * bulletSpeed;
+        if (target == null) return;
+
+        // Move the bullet in the stored direction
+        rb.linearVelocity = initialDirection * bulletSpeed;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

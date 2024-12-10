@@ -259,7 +259,8 @@ MonoBehaviour:
   firingPoint: {fileID: 8913655107008254935}
   targetingRange: 4
   rotationSpeed: 200
-  bps: 1
+  bps: 4
+  bulletLifeTime: 5
 --- !u!1 &8677291620716991388
 GameObject:
   m_ObjectHideFlags: 0

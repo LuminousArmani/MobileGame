@@ -13,6 +13,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f; //bullet per second
+    [SerializeField] private float bulletLifeTime = 5f;
 
     private Transform target;
     private float timeUntilFire;
@@ -54,7 +55,7 @@ public class Turret : MonoBehaviour
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
-
+        Destroy(bulletObj, bulletLifeTime);
 
     }
 
