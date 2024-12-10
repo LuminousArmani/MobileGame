@@ -18,6 +18,7 @@ public class Plot : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (tower != null) return;
         sr.color = hoverColor;
     }
 
@@ -28,6 +29,10 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Build Tower Here" + name);
+        if (tower != null) return;
+
+        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
+        tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
+
     }
 }
