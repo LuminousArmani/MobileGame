@@ -13,6 +13,7 @@ public class RocketTower : MonoBehaviour
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f; //bullet per second
+    [SerializeField] private float bulletLifeTime = 5f;
 
     private Transform target;
     private float timeUntilFire;
@@ -54,7 +55,7 @@ public class RocketTower : MonoBehaviour
         GameObject rocketObj = Instantiate(rocketPrefab, firingPoint.position, Quaternion.identity);
         Rocket rocketScript = rocketObj.GetComponent<Rocket>();
         rocketScript.SetTarget(target);
-
+        Destroy(rocketObj, bulletLifeTime);
 
     }
 
