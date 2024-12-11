@@ -255,7 +255,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Filler Text ---
+  m_text: "Welcome to space defender Ultimate! \n\n\nFirst, select what map/ level
+    you\n\nwant.\n\n\nyou place defenses down by using \n\nyour in-game money to
+    buy them.\n\n\nYour goal is to defeat the enemies\n\nand survive as long as possible\n\nwithout
+    having 10 enemies pass by\n\nyour defenses."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
@@ -282,8 +285,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
