@@ -31,10 +31,9 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("no more troops to send");
+            Debug.Log("no more troops to send on the battle field");
             return false;
         }
         
     }
-
 }
