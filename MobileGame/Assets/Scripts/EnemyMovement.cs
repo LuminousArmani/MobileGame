@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        target = LevelManager.main.path[pathIndex];
+        target = TDLevelManager.main.path[pathIndex];
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class EnemyMovement : MonoBehaviour
             pathIndex++;
 
 
-            if (pathIndex >= LevelManager.main.path.Length)
+            if (pathIndex >= TDLevelManager.main.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
 
@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                target = LevelManager.main.path[pathIndex];
+                target = TDLevelManager.main.path[pathIndex];
             }
         }
     }

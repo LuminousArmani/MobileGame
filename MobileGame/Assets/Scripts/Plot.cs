@@ -33,13 +33,13 @@ public class Plot : MonoBehaviour
 
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
         
-        if (towerToBuild.cost > LevelManager.main.power)
+        if (towerToBuild.cost > TDLevelManager.main.power)
         {
             Debug.Log("Broke");
             return;
         }
 
-        LevelManager.main.SpendCurrency(towerToBuild.cost);
+        TDLevelManager.main.SpendCurrency(towerToBuild.cost);
 
         tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
 

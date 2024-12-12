@@ -18,6 +18,6 @@ public class ShopMenu : MonoBehaviour
 
     private void OnGUI()
     {
-        currencyUI.text = LevelManager.main.power.ToString();
+        currencyUI.text = TDLevelManager.main.power.ToString();
     }
 }

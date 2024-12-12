@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class TDLevelManager : MonoBehaviour
 {
-    public static LevelManager main;
+    public static TDLevelManager main;
 
     public Transform startPoint;
     public Transform[] path;
@@ -17,10 +17,10 @@ public class LevelManager : MonoBehaviour
     {
         power = 100;
     }
-    public void IncreaseCurrency(int amount)
+    /*public void IncreaseCurrency(int amount)
     {
         power += amount;
-    }
+    }*/
     public bool SpendCurrency(int amount)
     {
         if (amount <= power)

@@ -82,7 +82,7 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemy()
     {
         GameObject prefabToSpawn = enemyPrefabs[0];
-        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+        Instantiate(prefabToSpawn, TDLevelManager.main.startPoint.position, Quaternion.identity);
     }
 
     private int EnemiesPerWave()
