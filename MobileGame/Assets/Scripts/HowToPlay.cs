@@ -12,4 +12,9 @@ public class HowToPlay : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+
+    public void howToPlay2()
+    {
+        SceneManager.LoadSceneAsync(8);
+    }    
 }
