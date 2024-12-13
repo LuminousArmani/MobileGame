@@ -9,7 +9,7 @@ TagManager:
   - QuitGame
   - LeftGoal
   - RightGoal
-  - enemy
+  - Enemy
   layers:
   - Default
   - TransparentFX
