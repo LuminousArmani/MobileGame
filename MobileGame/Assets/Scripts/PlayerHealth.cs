@@ -31,9 +31,8 @@ public class PlayerHealth : MonoBehaviour
         {
             health -= 1;
             healthBar.fillAmount = health / maxHP;
-            GetComponent<AudioSource>().Play();
             //add consequences
-            //IF health gets too low, reload the current level
+            //IF health gets too low, go to lose scene
             if (health <= 0)
             {
                 SceneManager.LoadSceneAsync(7);
@@ -47,7 +46,6 @@ public class PlayerHealth : MonoBehaviour
         {
             health -= 1;
             healthBar.fillAmount = health / maxHP;
-            GetComponent<AudioSource>().Play();
             //add consequences
             //IF health gets too low, go to lose scene
             if (health <= 0)
