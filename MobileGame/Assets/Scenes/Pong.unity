@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 215308629}
   m_Layer: 0
   m_Name: Right Goal
-  m_TagString: Untagged
+  m_TagString: RightGoal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 1137952253}
   m_Layer: 0
   m_Name: Left Goal
-  m_TagString: Untagged
+  m_TagString: LeftGoal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
