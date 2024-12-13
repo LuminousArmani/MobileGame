@@ -58,6 +58,8 @@ public class PongGameController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log($"Collision detected with: {collision.gameObject.name}");
+
         if (collision.CompareTag("LeftGoal"))
         {
             Debug.Log("Player 2 Scores!");
