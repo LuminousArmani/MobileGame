@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TDLevelManager : MonoBehaviour
 {
@@ -7,8 +8,22 @@ public class TDLevelManager : MonoBehaviour
     public Transform startPoint;
     public Transform[] path;
 
+
+    public int health = 100;
     public int power;
 
+
+    public int Health
+    {
+        get => health;
+        set
+        {
+            if (health <= 0)
+            {
+                SceneManager.LoadScene("lose");
+            }
+        }
+    }
     private void Awake()
     {
         main = this;
@@ -17,10 +32,10 @@ public class TDLevelManager : MonoBehaviour
     {
         power = 100;
     }
-    /*public void IncreaseCurrency(int amount)
+    public void IncreaseCurrency(int amount)
     {
         power += amount;
-    }*/
+    }
     public bool SpendCurrency(int amount)
     {
         if (amount <= power)
@@ -37,3 +52,4 @@ public class TDLevelManager : MonoBehaviour
         
     }
 }
+// i want my health int to be able to be callled and changed by other scripts
