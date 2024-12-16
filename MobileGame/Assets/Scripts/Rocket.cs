@@ -28,7 +28,7 @@ public class Rocket : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.GetComponent<Health>().TakeDamage(rocketDamage);
+        collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(rocketDamage);
         Destroy(gameObject);
     }
 }

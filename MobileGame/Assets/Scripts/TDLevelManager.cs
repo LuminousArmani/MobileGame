@@ -1,9 +1,13 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TDLevelManager : MonoBehaviour
 {
     public static TDLevelManager main;
+
+    [SerializeField] TextMeshProUGUI healthUI;
 
     public Transform startPoint;
     public Transform[] path;
@@ -24,13 +28,15 @@ public class TDLevelManager : MonoBehaviour
             }
         }
     }
+    
     private void Awake()
     {
         main = this;
     }
     private void Start()
     {
-        power = 100;
+        power = 100; 
+        healthUI.text = TDLevelManager.main.health.ToString();
     }
     public void IncreaseCurrency(int amount)
     {
@@ -52,4 +58,3 @@ public class TDLevelManager : MonoBehaviour
         
     }
 }
-// i want my health int to be able to be callled and changed by other scripts
