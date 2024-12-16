@@ -37,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 SceneManager.LoadSceneAsync(7);
             }
+            GetComponent<AudioSource>().Play();
         }
     }
 
@@ -52,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 SceneManager.LoadSceneAsync(7);
             }
+            GetComponent<AudioSource>().Play();
         }
     }
 }
