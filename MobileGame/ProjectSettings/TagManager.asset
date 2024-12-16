@@ -10,6 +10,8 @@ TagManager:
   - LeftGoal
   - RightGoal
   - Enemy
+  - enemy
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
