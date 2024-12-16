@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -17,12 +18,17 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
+    public bool easy = false;
+    public bool medium = false;
+    public bool hard = false;
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
+    
+
 
 
     private void Awake()
@@ -54,6 +60,40 @@ public class EnemySpawner : MonoBehaviour
         }
 
 
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Check the scene name or index
+        if (currentScene.name == "EarthEasy") // Replace "TargetSceneName" with your scene's name
+        {
+            easy = true;
+        }
+        else
+        {
+            easy = false;
+        }
+
+
+        if (currentScene.name == "MarsMedium") // Replace "TargetSceneName" with your scene's name
+        {
+            medium = true;
+        }
+        else
+        {
+            medium = false;
+        }
+
+
+        if (currentScene.name == "NeptuneHard") // Replace "TargetSceneName" with your scene's name
+        {
+            hard = true;
+        }
+        else
+        {
+            hard = false;
+        }
+
+
+
     }
 
     private void EndWave()
@@ -62,6 +102,11 @@ public class EnemySpawner : MonoBehaviour
         timeSinceLastSpawn = 0f;
         currentWave++;
         StartCoroutine(StartWave());
+        if (currentWave == 20 && easy == true && medium == false && hard == false || currentWave == 35 && easy == false && medium == true && hard == false || currentWave == 50 && easy == false && medium == false && hard == true)
+        {
+            SceneManager.LoadScene("Win");
+        }
+
     }
 
 
@@ -81,7 +126,7 @@ public class EnemySpawner : MonoBehaviour
     }
     private void SpawnEnemy()
     {
-        GameObject prefabToSpawn = enemyPrefabs[0];
+        GameObject prefabToSpawn = enemyPrefabs[2];
         Instantiate(prefabToSpawn, TDLevelManager.main.startPoint.position, Quaternion.identity);
     }
 
