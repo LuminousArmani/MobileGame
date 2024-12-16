@@ -91,9 +91,6 @@ public class EnemySpawner : MonoBehaviour
         {
             hard = false;
         }
-
-
-
     }
 
     private void EndWave()
@@ -102,11 +99,10 @@ public class EnemySpawner : MonoBehaviour
         timeSinceLastSpawn = 0f;
         currentWave++;
         StartCoroutine(StartWave());
-        if (currentWave == 20 && easy == true && medium == false && hard == false || currentWave == 35 && easy == false && medium == true && hard == false || currentWave == 50 && easy == false && medium == false && hard == true)
+        if (currentWave == 20 && easy == true && medium == false && hard == false || currentWave == 35 && easy == false && medium == true && hard == false || currentWave == 50 && easy == false && medium == false && hard == true || currentWave == 90)
         {
             SceneManager.LoadScene("Win");
         }
-
     }
 
 
@@ -132,7 +128,7 @@ public class EnemySpawner : MonoBehaviour
 
     private int EnemiesPerWave()
     {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
     }
 
 }
