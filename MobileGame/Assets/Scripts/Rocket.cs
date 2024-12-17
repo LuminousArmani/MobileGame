@@ -11,6 +11,7 @@ public class Rocket : MonoBehaviour
 
 
     private Transform target;
+    private Vector2 initialDirection;
 
     public void SetTarget(Transform _target)
     {
