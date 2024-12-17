@@ -104,7 +104,17 @@ public class EnemySpawner : MonoBehaviour
         if (currentWave == 20 && easy == true && medium == false && hard == false || currentWave == 35 && easy == false && medium == true && hard == false || currentWave == 50 && easy == false && medium == false && hard == true || currentWave == 90)
         {
             SceneManager.LoadScene("Win");
+            easy = false;
+            medium = false;
+            hard = false;
         }
+        if (easy == true && medium == true || easy == true && hard == true || medium == true && hard == true)
+        {
+            SceneManager.LoadScene("TitleScreen");
+            easy = false;
+            medium = false;
+            hard = false;
+        } 
     }
 
 
