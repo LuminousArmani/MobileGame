@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLeftToSpawn;
     private float eps; // enemies per second
     private bool isSpawning = false;
-    
+
 
 
 
@@ -47,7 +47,7 @@ public class EnemySpawner : MonoBehaviour
         if (!isSpawning) return;
 
         timeSinceLastSpawn += Time.deltaTime;
-        
+
         if (timeSinceLastSpawn >= (1f / eps) && enemiesLeftToSpawn > 0)
         {
             SpawnEnemy();
@@ -101,6 +101,8 @@ public class EnemySpawner : MonoBehaviour
         timeSinceLastSpawn = 0f;
         currentWave++;
         StartCoroutine(StartWave());
+
+        //difficulty wave maximum
         if (currentWave == 20 && easy == true && medium == false && hard == false || currentWave == 35 && easy == false && medium == true && hard == false || currentWave == 50 && easy == false && medium == false && hard == true || currentWave == 90)
         {
             SceneManager.LoadScene("Win");
@@ -108,34 +110,59 @@ public class EnemySpawner : MonoBehaviour
             medium = false;
             hard = false;
         }
+        //if any more then one difficulty is true reset
         if (easy == true && medium == true || easy == true && hard == true || medium == true && hard == true)
         {
             SceneManager.LoadScene("TitleScreen");
             easy = false;
             medium = false;
             hard = false;
-        } 
+        }
     }
 
 
 
-    private void EnemyDestroyed()
+    private void EnemyDestroyed()//lowers the number of enemies alive
     {
         enemiesAlive--;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     private IEnumerator StartWave()
     {
-        yield return new WaitForSeconds(timeBetweenWaves);
+        yield return new WaitForSeconds(timeBetweenWaves);//gives time to set up after a wave
 
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
-        eps = EnemiesPerSecond();
+        eps = EnemiesPerSecond();//how fast enemies spawn
     }
     private void SpawnEnemy()
     {
-        int index = Random.Range(0, enemyPrefabs.Length);
+        int index;
+
+        if (currentWave < 10)
+        {
+            // Spawn only enemy 0 for waves 1-9
+            index = 0;
+        }
+        else if (currentWave < 20)
+        {
+            // Spawn enemy 0 and 1 for waves 10-19
+            index = Random.Range(0, 2); // 0 or 1
+        }
+        else if (currentWave >= 20)
+        {
+            // Spawn enemies 2, 4, and 5 from wave 20 onward
+            int[] allowedIndices = { 2, 4, 5 };
+            index = allowedIndices[Random.Range(0, allowedIndices.Length)];
+        }
+        else
+        {
+            // Fallback in case of invalid wave (shouldn't happen)
+            index = 0;
+        }
+
+        // Instantiate the selected enemy prefab
         GameObject prefabToSpawn = enemyPrefabs[index];
         Instantiate(prefabToSpawn, TDLevelManager.main.startPoint.position, Quaternion.identity);
     }
@@ -148,4 +175,4 @@ public class EnemySpawner : MonoBehaviour
     {
         return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0, enemiesPerSecondCap);
     }
-}
+}// i want my spawn enemy to only spawn enemy 0untill a certain round then i will spawn enemy 0,1 and AGAIN at a later round only spawn enemies 2,4,5

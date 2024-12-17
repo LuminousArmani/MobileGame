@@ -33,7 +33,7 @@ public class Plot : MonoBehaviour
 
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
         
-        if (towerToBuild.cost > TDLevelManager.main.power)
+        if (towerToBuild.cost > TDLevelManager.main.currency)
         {
             Debug.Log("Broke");
             return;

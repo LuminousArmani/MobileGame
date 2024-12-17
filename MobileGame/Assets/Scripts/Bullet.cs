@@ -20,6 +20,7 @@ public class Bullet : MonoBehaviour
         if (target != null)
         {
             initialDirection = (target.position - transform.position).normalized; // Store normalized direction
+            RotateTowards(initialDirection);
         }
     }
 
@@ -30,6 +31,12 @@ public class Bullet : MonoBehaviour
 
         // Move the bullet in the stored direction
         rb.linearVelocity = initialDirection * bulletSpeed;
+    }
+    private void RotateTowards(Vector2 direction)
+    {
+        // Calculate the angle to rotate towards
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

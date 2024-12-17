@@ -9,12 +9,12 @@ public class TDLevelManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI healthUI;
 
-    public Transform startPoint;
-    public Transform[] path;
+    public Transform startPoint;//where the enemy will spawn
+    public Transform[] path;// an array of empty game objects 
 
 
     public int health = 100;
-    public int power;
+    public int currency;
 
 
     public int Health
@@ -38,19 +38,19 @@ public class TDLevelManager : MonoBehaviour
     }
     private void Start()
     {
-        power = 100;
+        currency = 100;
         healthUI.text = health.ToString();
     }
     public void IncreaseCurrency(int amount)
     {
-        power += amount;
+        currency += amount;
     }
     public bool SpendCurrency(int amount)
     {
-        if (amount <= power)
+        if (amount <= currency)
         {
             // buy item
-            power -= amount;
+            currency -= amount;
             return true;
         }
         else
