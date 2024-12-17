@@ -393,9 +393,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Welcome to space defender Ultimate! \n\n\nFirst, select what map/ level
     you\n\nwant.\n\n\nyou place defenses down by using \n\nyour in-game currency
-    to buy them \n\non the menu.\n\n\nYour goal is to defeat the enemies\n\nand survive
-    as long as possible\n\nwithout having 10 enemies pass by\n\nyour defenses. If
-    10 enemies pass by\n\nyour defenses, the game ends."
+    to buy them \n\non the menu.\n\n\nYour goal is to survive until wave 35\n\non
+    medium mode or wave 50 on hard\n\nmode. You can lose by enemies\n\ngetting past
+    your defenses and\n\ntaking down your health."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
