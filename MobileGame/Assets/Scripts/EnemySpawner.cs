@@ -140,20 +140,20 @@ public class EnemySpawner : MonoBehaviour
     {
         int index;
 
-        if (currentWave < 10)
+        if (currentWave < 3)
         {
-            // Spawn only enemy 0 for waves 1-9
+            
             index = 0;
         }
-        else if (currentWave < 20)
+        else if (currentWave < 6)
         {
-            // Spawn enemy 0 and 1 for waves 10-19
+            
             index = Random.Range(0, 2); // 0 or 1
         }
-        else if (currentWave >= 20)
+        else if (currentWave >= 12)
         {
-            // Spawn enemies 2, 4, and 5 from wave 20 onward
-            int[] allowedIndices = { 2, 4, 5 };
+            
+            int[] allowedIndices = { 2, 3, 4 };
             index = allowedIndices[Random.Range(0, allowedIndices.Length)];
         }
         else
