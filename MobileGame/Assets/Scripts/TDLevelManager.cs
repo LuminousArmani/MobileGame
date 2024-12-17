@@ -22,6 +22,9 @@ public class TDLevelManager : MonoBehaviour
         get => health;
         set
         {
+            health = value; // Update the internal health value
+            healthUI.text = health.ToString(); // Update the health UI text
+
             if (health <= 0)
             {
                 SceneManager.LoadScene("lose");
@@ -35,8 +38,8 @@ public class TDLevelManager : MonoBehaviour
     }
     private void Start()
     {
-        power = 100; 
-        healthUI.text = TDLevelManager.main.health.ToString();
+        power = 100;
+        healthUI.text = health.ToString();
     }
     public void IncreaseCurrency(int amount)
     {

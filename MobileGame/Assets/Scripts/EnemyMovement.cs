@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float movespeed = 2f;
+    [SerializeField] private int damage = 1;
 
     private Transform target;
     private int pathIndex = 0;
@@ -29,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
 
-                TDLevelManager.main.Health -= 10;
+                TDLevelManager.main.Health -= damage;
 
 
                 Destroy(gameObject);
