@@ -32,7 +32,6 @@ public class EnemyMovement : MonoBehaviour
 
                 TDLevelManager.main.Health -= damage;
 
-
                 Destroy(gameObject);
                 return;
             }
