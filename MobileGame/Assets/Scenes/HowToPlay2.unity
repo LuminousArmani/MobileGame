@@ -782,18 +782,26 @@ MonoBehaviour:
     the icon of a defense you want to
 
 
-    place.
+    place. Then you can
+    place the
+
+
+    defense on a plot on the ground by
+
+
+    pressing the plot.
 
 
 
-    You can
-    use the pause menu by
+    You
+    can open the pause menu by
 
 
     pressing the pause menu button on
 
 
-    the screen.'
+    the
+    screen.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
