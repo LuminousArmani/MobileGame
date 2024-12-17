@@ -34,8 +34,9 @@ public class WinManager : MonoBehaviour
     public void GoBackToMenu()
     {
         Time.timeScale = 1f; // Unfreeze the game
-        SceneManager.LoadScene("MainMenu"); // Load your main menu scene (replace with your actual menu scene name)
+        SceneManager.LoadScene("TitleScreen"); // Load your main menu scene (replace with your actual menu scene name)
     }
+
 
     private void Start()
     {
