@@ -12,11 +12,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefabs;
 
     [Header("Attributes")]
-    [SerializeField] private int baseEnemies = 8;
-    [SerializeField] private float enemiesPerSecond = 0.5f;
-    [SerializeField] private float timeBetweenWaves = 5f;
-    [SerializeField] private float difficultyScalingFactor = 0.75f;
-    [SerializeField] private float enemiesPerSecondCap = 20f;
+    [SerializeField] public int baseEnemies = 8;
+    [SerializeField] public float enemiesPerSecond = 0.5f;
+    [SerializeField] public float timeBetweenWaves = 5f;
+    [SerializeField] public float difficultyScalingFactor = 0.75f;
+    [SerializeField] public float enemiesPerSecondCap = 20f;
     [SerializeField] private TextMeshProUGUI waveNumberText;
 
     [Header("Events")]
@@ -68,7 +68,7 @@ public class EnemySpawner : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
 
         // Check the scene name or index
-        if (currentScene.name == "EarthEasy") // Replace "TargetSceneName" with your scene's name
+        if (currentScene.name == "EarthEasy") 
         {
             easy = true;
         }
@@ -85,7 +85,7 @@ public class EnemySpawner : MonoBehaviour
         }
 
 
-        if (currentScene.name == "MarsMedium") // Replace "TargetSceneName" with your scene's name
+        if (currentScene.name == "MarsMedium") 
         {
             medium = true;
         }
@@ -102,7 +102,7 @@ public class EnemySpawner : MonoBehaviour
         }
 
 
-        if (currentScene.name == "NeptuneHard") // Replace "TargetSceneName" with your scene's name
+        if (currentScene.name == "NeptuneHard") 
         {
             hard = true;
         }
