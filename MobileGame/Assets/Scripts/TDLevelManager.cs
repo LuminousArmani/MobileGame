@@ -13,7 +13,7 @@ public class TDLevelManager : MonoBehaviour
     public Transform[] path;// an array of empty game objects 
 
 
-    public int health = 100;
+    public int health = 10;
     public int currency;
 
 

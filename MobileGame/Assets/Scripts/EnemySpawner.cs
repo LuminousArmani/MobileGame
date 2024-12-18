@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     [SerializeField] private float enemiesPerSecondCap = 20f;
+    [SerializeField] private TextMeshProUGUI waveNumberText;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -40,6 +42,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartWave());
+        UpdateWaveText();
     }
 
     private void Update()
@@ -73,6 +76,13 @@ public class EnemySpawner : MonoBehaviour
         {
             easy = false;
         }
+        if (easy == true)
+        {
+            difficultyScalingFactor = 0.60f;
+            enemiesPerSecondCap = 15f;
+            timeBetweenWaves = 6f;
+            baseEnemies = 8;
+        }
 
 
         if (currentScene.name == "MarsMedium") // Replace "TargetSceneName" with your scene's name
@@ -82,6 +92,13 @@ public class EnemySpawner : MonoBehaviour
         else
         {
             medium = false;
+        }
+        if (medium == true)
+        {
+            difficultyScalingFactor = 0.75f;
+            enemiesPerSecondCap = 20f;
+            timeBetweenWaves = 4f;
+            baseEnemies = 12;
         }
 
 
@@ -93,6 +110,14 @@ public class EnemySpawner : MonoBehaviour
         {
             hard = false;
         }
+        if (hard == true)
+        {
+            difficultyScalingFactor = 0.95f;
+            enemiesPerSecondCap = 30f;
+            timeBetweenWaves = 1f;
+            baseEnemies = 15;
+        }
+
     }
 
     private void EndWave()
@@ -100,6 +125,7 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
+        UpdateWaveText();
         StartCoroutine(StartWave());
 
         //difficulty wave maximum
@@ -126,7 +152,13 @@ public class EnemySpawner : MonoBehaviour
     {
         enemiesAlive--;
     }
-
+    private void UpdateWaveText()
+    {
+        if (waveNumberText != null)
+        {
+            waveNumberText.text = $"Wave: {currentWave}";
+        }
+    }
 
     private IEnumerator StartWave()
     {
@@ -145,16 +177,31 @@ public class EnemySpawner : MonoBehaviour
             
             index = 0;
         }
-        else if (currentWave < 6)
+        else if (currentWave < 7)
         {
             
-            index = Random.Range(0, 2); // 0 or 1
+            index = Random.Range(0, 3); // 0 or 1
         }
         else if (currentWave >= 12)
         {
             
-            int[] allowedIndices = { 2, 3, 4 };
+            int[] allowedIndices = { 0, 2, 3, 4, 5 };
             index = allowedIndices[Random.Range(0, allowedIndices.Length)];
+        }
+        else if (currentWave < 28)
+        {
+
+            index = Random.Range(4, 8); // 0 or 1
+        }
+        else if (currentWave < 32)
+        {
+
+            index = Random.Range(7, 13); // 0 or 1
+        }
+        else if (currentWave < 48)
+        {
+
+            index = Random.Range(11, 15); // 0 or 1
         }
         else
         {
@@ -175,4 +222,4 @@ public class EnemySpawner : MonoBehaviour
     {
         return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0, enemiesPerSecondCap);
     }
-}// i want my spawn enemy to only spawn enemy 0untill a certain round then i will spawn enemy 0,1 and AGAIN at a later round only spawn enemies 2,4,5
+}
