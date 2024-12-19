@@ -1,9 +1,8 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Plot : MonoBehaviour
+public class Plot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-
-
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
@@ -16,23 +15,23 @@ public class Plot : MonoBehaviour
         startColor = sr.color;
     }
 
-    private void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData eventData)
     {
         if (tower != null) return;
         sr.color = hoverColor;
     }
 
-    private void OnMouseExit()
+    public void OnPointerExit(PointerEventData eventData)
     {
         sr.color = startColor;
     }
 
-    private void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
         if (tower != null) return;
 
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
-        
+
         if (towerToBuild.cost > TDLevelManager.main.currency)
         {
             Debug.Log("Broke");
@@ -42,6 +41,5 @@ public class Plot : MonoBehaviour
         TDLevelManager.main.SpendCurrency(towerToBuild.cost);
 
         tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-
     }
 }

@@ -1,0 +1,23 @@
+# ninja log v5
+129	1023	7563024726745733	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	625f24b4932d431b
+202	318	7563024719751559	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	265a1b87db127503
+319	498	7563024721523978	O:/unity/Editor/MobileGame/MobileGame/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceDefendersUltimate/gradle-project/unityLibrary/build/intermediates/cxx/Debug/u4y3c65p/obj/arm64-v8a/libswappywrapper.so	84529c44b1bc346e
+136	880	7563024725253767	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	819bd5772a4b12e
+195	871	7563024725186158	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b06731c5dc43d0e7
+134	934	7563024725869875	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	78b7d11e4d4d928
+131	887	7563024725403343	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	a8aa584a4c76817d
+198	913	7563024725658329	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	124f825fb692cd40
+126	871	7563024725186158	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f6a0147f401c6436
+139	1003	7563024726505945	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8d814a2296c9e4c0
+1024	1126	7563024727803013	O:/unity/Editor/MobileGame/MobileGame/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceDefendersUltimate/gradle-project/unityLibrary/build/intermediates/cxx/Debug/u4y3c65p/obj/arm64-v8a/libgame.so	a95833348aadcbf4
+26	151	7563038520908851	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	265a1b87db127503
+151	330	7563038522687488	O:/unity/Editor/MobileGame/MobileGame/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceDefendersUltimate/gradle-project/unityLibrary/build/intermediates/cxx/Debug/u4y3c65p/obj/arm64-v8a/libswappywrapper.so	84529c44b1bc346e
+6	733	7563038526683073	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	a8aa584a4c76817d
+2	751	7563038526786925	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f6a0147f401c6436
+18	767	7563038526964780	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	819bd5772a4b12e
+21	768	7563038527004668	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b06731c5dc43d0e7
+11	793	7563038527279927	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	78b7d11e4d4d928
+23	793	7563038527279927	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	124f825fb692cd40
+15	859	7563038527954509	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8d814a2296c9e4c0
+8	889	7563038528256192	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	625f24b4932d431b
+889	982	7563038529172036	O:/unity/Editor/MobileGame/MobileGame/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.SpaceDefendersUltimate/gradle-project/unityLibrary/build/intermediates/cxx/Debug/u4y3c65p/obj/arm64-v8a/libgame.so	a95833348aadcbf4

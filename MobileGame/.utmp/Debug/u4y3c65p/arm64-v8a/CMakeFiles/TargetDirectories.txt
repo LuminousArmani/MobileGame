@@ -1,0 +1,8 @@
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/CMakeFiles/edit_cache.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/CMakeFiles/rebuild_cache.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/GameActivity/CMakeFiles/game.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+O:/unity/Editor/MobileGame/MobileGame/.utmp/Debug/u4y3c65p/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

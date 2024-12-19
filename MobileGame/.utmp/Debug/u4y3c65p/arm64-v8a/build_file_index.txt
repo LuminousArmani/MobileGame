@@ -1,0 +1,3 @@
+O:\unity\Editor\MobileGame\MobileGame\Library\PramData\AndroidApplicationController\Cache\com.DefaultCompany.SpaceDefendersUltimate\gradle-project\unityLibrary\src\main\cpp\CMakeLists.txt
+O:\unity\Editor\MobileGame\MobileGame\Library\PramData\AndroidApplicationController\Cache\com.DefaultCompany.SpaceDefendersUltimate\gradle-project\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+O:\unity\Editor\MobileGame\MobileGame\Library\PramData\AndroidApplicationController\Cache\com.DefaultCompany.SpaceDefendersUltimate\gradle-project\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

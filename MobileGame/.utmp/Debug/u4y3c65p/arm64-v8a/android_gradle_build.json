@@ -1,0 +1,47 @@
+{
+  "buildFiles": [
+    "O:\\unity\\Editor\\MobileGame\\MobileGame\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.SpaceDefendersUltimate\\gradle-project\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
+    "O:\\unity\\Editor\\MobileGame\\MobileGame\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.SpaceDefendersUltimate\\gradle-project\\unityLibrary\\src\\main\\cpp\\FramePacing\\CMakeLists.txt",
+    "O:\\unity\\Editor\\MobileGame\\MobileGame\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.SpaceDefendersUltimate\\gradle-project\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "O:\\unity\\Editor\\6000.0.29f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "O:\\unity\\Editor\\MobileGame\\MobileGame\\.utmp\\Debug\\u4y3c65p\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "O:\\unity\\Editor\\6000.0.29f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "O:\\unity\\Editor\\MobileGame\\MobileGame\\.utmp\\Debug\\u4y3c65p\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "game::@d02bb112ea9f9c2ed29f": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "game",
+      "output": "O:\\unity\\Editor\\MobileGame\\MobileGame\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.SpaceDefendersUltimate\\gradle-project\\unityLibrary\\build\\intermediates\\cxx\\Debug\\u4y3c65p\\obj\\arm64-v8a\\libgame.so",
+      "runtimeFiles": []
+    },
+    "swappywrapper::@7e25bd1f32ce224db4e9": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "swappywrapper",
+      "output": "O:\\unity\\Editor\\MobileGame\\MobileGame\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.SpaceDefendersUltimate\\gradle-project\\unityLibrary\\build\\intermediates\\cxx\\Debug\\u4y3c65p\\obj\\arm64-v8a\\libswappywrapper.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "O:\\unity\\Editor\\6000.0.29f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "O:\\unity\\Editor\\6000.0.29f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

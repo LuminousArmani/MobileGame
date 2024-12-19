@@ -8689,6 +8689,7 @@ GameObject:
   - component: {fileID: 1074406793}
   - component: {fileID: 1074406792}
   - component: {fileID: 1074406791}
+  - component: {fileID: 1074406795}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8814,6 +8815,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1074406795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074406790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &1093688617
 GameObject:
   m_ObjectHideFlags: 0
@@ -11824,7 +11841,6 @@ GameObject:
   - component: {fileID: 1518634219}
   - component: {fileID: 1518634218}
   - component: {fileID: 1518634217}
-  - component: {fileID: 1518634220}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -11946,19 +11962,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518634215}
   m_CullTransparentMesh: 1
---- !u!114 &1518634220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518634215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ControlPath: <Touchscreen>/Press
 --- !u!4 &1521710426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710971891264735058, guid: bfb23284bc4ac46469b00275b20dd378, type: 3}
@@ -14254,7 +14257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.09, y: -0.4}
+  m_AnchoredPosition: {x: -7.48, y: -3.69}
   m_SizeDelta: {x: 6.1978, y: 0.9136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1946600543
