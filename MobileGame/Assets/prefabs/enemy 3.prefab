@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2429523127676223766}
   - component: {fileID: 4822039167464051722}
   m_Layer: 8
-  m_Name: enemy
+  m_Name: enemy 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 98178513e0837e04fbf116ae4e92110f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03903defbf5d49f4a9c7f80906f04819, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -3631800446194899987}
-  movespeed: 2.74
+  movespeed: 14.78
   damage: 1
 --- !u!114 &4822039167464051722
 MonoBehaviour:
@@ -181,5 +181,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48ea8f34560dd747ae566c178ee6335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 1
-  currencyWorth: 50
+  hitPoints: 10
+  currencyWorth: 100

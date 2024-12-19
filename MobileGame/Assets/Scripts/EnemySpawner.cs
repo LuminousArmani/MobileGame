@@ -154,7 +154,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentWave < 32)
             return Random.Range(7, 13);
         if (currentWave < 48)
-            return Random.Range(11, 15);
+            return Random.Range(11, 16);
 
         return 0; // Fallback
     }

@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: -5228560350116926462}
   bulletSpeed: 21.12
-  bulletDamage: 15
+  bulletDamage: 20
 --- !u!82 &-320218530630802871
 AudioSource:
   m_ObjectHideFlags: 0

@@ -44,6 +44,10 @@ public class TDLevelManager : MonoBehaviour
     public void IncreaseCurrency(int amount)
     {
         currency += amount;
+        if (currency >= 20001) 
+        {
+            currency = 20000;
+        }
     }
     public bool SpendCurrency(int amount)
     {
