@@ -1880,7 +1880,7 @@ MonoBehaviour:
   - {fileID: 2144933177}
   - {fileID: 476579802}
   health: 10
-  currency: 100
+  currency: 150
 --- !u!4 &234075555
 Transform:
   m_ObjectHideFlags: 0
