@@ -36,7 +36,7 @@ public class KonamiCodeDetector : MonoBehaviour
         }
     }
 
-    private void UnlockPong()
+    public void UnlockPong()
     {
         // Load the Pong scene
         SceneManager.LoadScene("Pong");
