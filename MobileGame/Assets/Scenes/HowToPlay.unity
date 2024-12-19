@@ -368,8 +368,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -126}
-  m_SizeDelta: {x: 983.8762, y: 671.6276}
+  m_AnchoredPosition: {x: 0, y: -154.79031}
+  m_SizeDelta: {x: 983.8762, y: 729.2083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1383451783
 MonoBehaviour:
@@ -393,9 +393,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Welcome to space defender Ultimate! \n\n\nFirst, select what map/ level
     you\n\nwant.\n\n\nyou place defenses down by using \n\nyour in-game currency
-    to buy them \n\non the menu.\n\n\nYour goal is to survive until wave 35\n\non
-    medium mode or wave 50 on hard\n\nmode. You can lose by enemies\n\ngetting past
-    your defenses and\n\ntaking down your health."
+    to buy them \n\non the menu.\n\n\nYour goal is to survive until wave 20\n\non
+    easy mode,  wave 35 on medium mode\n\nor wave 50 on hard\n\nmode.\n\nYou can
+    lose by enemies\n\ngetting past your defenses and\n\ntaking down your health."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
