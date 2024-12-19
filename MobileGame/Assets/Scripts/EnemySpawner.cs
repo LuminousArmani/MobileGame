@@ -105,7 +105,7 @@ public class EnemySpawner : MonoBehaviour
             (currentWave == 50 && difficultyScalingFactor == 0.95f) ||
             currentWave == 90)
         {
-            SceneManager.LoadScene("Win");
+            SceneManager.LoadScene("WinScreen");
         }
     }
 

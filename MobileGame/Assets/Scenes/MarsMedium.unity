@@ -1798,19 +1798,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towers:
   - name: ASTRO
-    cost: 100
+    cost: 150
     prefab: {fileID: 5756320176518916324, guid: 3d3aea2dd2bf682499bce40369293983, type: 3}
   - name: LAuncher
-    cost: 300
+    cost: 450
     prefab: {fileID: 3614240511074575256, guid: 38a962f7545a4c3428f032211ade2a0d, type: 3}
   - name: tank
-    cost: 750
+    cost: 1000
     prefab: {fileID: 3614240511074575256, guid: 9841cae1770534148b549f9f5b0b78a8, type: 3}
   - name: HAZARDUs
-    cost: 1000
+    cost: 1500
     prefab: {fileID: 3614240511074575256, guid: af783fdabc7cd334796222af16db7973, type: 3}
   - name: SUPER
-    cost: 1500
+    cost: 2000
     prefab: {fileID: 5756320176518916324, guid: e4fbb42d3274e9f49934fd0be274dd1e, type: 3}
   selectedTowerText: {fileID: 49183339}
 --- !u!114 &234075553
@@ -7574,7 +7574,7 @@ MonoBehaviour:
 
 
 
-    cost:300'
+    cost:450'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
@@ -8596,7 +8596,7 @@ MonoBehaviour:
 
 
 
-    COST:1000
+    COST:1500
 
 '
   m_isRightToLeft: 0
@@ -10027,7 +10027,7 @@ MonoBehaviour:
 
 
 
-    cost:750'
+    cost:1000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
@@ -10819,7 +10819,7 @@ MonoBehaviour:
 
 
 
-    cost:100'
+    cost:150'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
@@ -14976,7 +14976,7 @@ MonoBehaviour:
 
 
 
-    COST:1500'
+    COST:2000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
   m_sharedMaterial: {fileID: 6128569427537331971, guid: 9993efa815ce4584f8bc8aeb91d41c84, type: 2}
