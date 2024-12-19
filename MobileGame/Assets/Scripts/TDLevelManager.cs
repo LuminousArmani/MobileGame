@@ -38,8 +38,24 @@ public class TDLevelManager : MonoBehaviour
     }
     private void Start()
     {
-        currency = 100;
+
         healthUI.text = health.ToString();
+        Scene currentScene = SceneManager.GetActiveScene();
+        switch (currentScene.name)
+        {
+            case "EarthEasy":
+                currency = 100;
+                break;
+            case "MarsMedium":
+                currency = 150;
+                break;
+            case "NeptuneHard":
+                currency = 200;
+                break;
+            default:
+                Debug.LogWarning("Scene not recognized. Using default difficulty settings.");
+                break;
+        }
     }
     public void IncreaseCurrency(int amount)
     {
