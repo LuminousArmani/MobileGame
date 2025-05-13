@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HowToPlay2.unity
     guid: b21f923e2c36a164ea9fb599c9a9655a
   - enabled: 1
-    path: Assets/Scenes/Pong.unity
+    path: Assets/Scenes/Breakout.unity
     guid: 479f0e1c526aee445a6388f9b4307916
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fff07300f49c6914daca9ca80986946b, type: 3}
